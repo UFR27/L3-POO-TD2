@@ -50,7 +50,7 @@ public class Player {
         return sb.toString();
     }
 
-    protected Card[] getHand() {
+    public Card[] getHand() {
         //if we were more advanced, it would be a line
         //return Arrays.stream(hand).filter(c -> c != null).collect(Collectors.toList()).toArray(new Card[0]);
 
