@@ -11,16 +11,16 @@ class PairCombinationTest {
     @Test
     void isMatch() {
         {
-            SimpleCombination pairCombination = new PairCombination(new Player("toto", "4C", "4H", "3S", "5C", "6C").getHand());
+            Combination pairCombination = new PairCombination(new Player("toto", "4C", "4H", "3S", "5C", "6C").getHand());
             assertTrue(pairCombination.isMatch());
         }
 
         {
-            SimpleCombination pairCombination = new PairCombination(new Player("toto", "4C", "3H", "3S", "5C", "6C").getHand());
+            Combination pairCombination = new PairCombination(new Player("toto", "4C", "3H", "3S", "5C", "6C").getHand());
             assertTrue(pairCombination.isMatch());
         }
         {
-            SimpleCombination pairCombination = new PairCombination(new Player("toto", "4C", "1H", "3S", "5C", "6C").getHand());
+            Combination pairCombination = new PairCombination(new Player("toto", "4C", "1H", "3S", "5C", "6C").getHand());
             assertFalse(pairCombination.isMatch());
         }
     }
@@ -28,12 +28,12 @@ class PairCombinationTest {
     @Test
     void getCombinationRanking() {
         {
-            SimpleCombination pairCombination = new PairCombination(new Player("toto", "4C", "1H", "3S", "5C", "6C").getHand());
+            Combination pairCombination = new PairCombination(new Player("toto", "4C", "1H", "3S", "5C", "6C").getHand());
             assertEquals(null, pairCombination.getCombinationRanking());
         }
 
         {
-            SimpleCombination pairCombination = new PairCombination(new Player("toto", "4C", "3H", "3S", "5C", "6C").getHand());
+            Combination pairCombination = new PairCombination(new Player("toto", "4C", "3H", "3S", "5C", "6C").getHand());
             assertEquals(CardValue.THREE, pairCombination.getCombinationRanking());
         }
     }

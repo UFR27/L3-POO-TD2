@@ -3,7 +3,7 @@ package fr.pantheonsorbonne.cri.combination;
 import fr.pantheonsorbonne.cri.Card;
 import fr.pantheonsorbonne.cri.enums.CardValue;
 
-public class ThreeOfAKindCombination extends SimpleCombination {
+public class ThreeOfAKindCombination extends Combination {
 
     private CardValue highestCard;
 

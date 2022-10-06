@@ -6,7 +6,7 @@ import fr.pantheonsorbonne.cri.enums.CardValue;
 /**
  * a simple batch of Cards
  */
-public class SimpleCombination {
+public class Combination {
     protected final Card[] hand;
 
     /**
@@ -14,7 +14,7 @@ public class SimpleCombination {
      *
      * @param hand
      */
-    public SimpleCombination(final Card[] hand) {
+    public Combination(final Card[] hand) {
         this.hand = hand;
     }
 

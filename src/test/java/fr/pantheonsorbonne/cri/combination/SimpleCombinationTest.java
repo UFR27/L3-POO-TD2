@@ -12,14 +12,14 @@ class SimpleCombinationTest {
 
     @Test
     void isMatch() {
-        SimpleCombination simpleCombination = new SimpleCombination(Deck.newRandomHand());
+        Combination simpleCombination = new Combination(Deck.newRandomHand());
         assertTrue(simpleCombination.isMatch());
     }
 
     @Test
     void getCombinationRanking() {
         Player p = new Player("toto", "2C", "3H", "1S");
-        SimpleCombination simpleCombination = new SimpleCombination(p.getHand());
+        Combination simpleCombination = new Combination(p.getHand());
         assertEquals(CardValue.ACE, simpleCombination.getCombinationRanking());
 
     }
@@ -27,7 +27,7 @@ class SimpleCombinationTest {
     @Test
     void getCombinationRankingPair() {
         Player p = new Player("toto", "KC", "1C", "1S");
-        SimpleCombination simpleCombination = new SimpleCombination(p.getHand());
+        Combination simpleCombination = new Combination(p.getHand());
         assertEquals(CardValue.ACE, simpleCombination.getCombinationRanking());
 
     }
